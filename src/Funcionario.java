@@ -38,4 +38,10 @@ public class Funcionario {
 		this.salario = salario;
 	}
 
+	@Override
+	public String toString() {
+		return "A Classe Funcionario Possui Nome: " + nome + ", CPF: " 
+	                        + cpf + ", Salario: R$" + salario+" Reais";
+	}
+
 }

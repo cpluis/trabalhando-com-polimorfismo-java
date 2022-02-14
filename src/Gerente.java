@@ -2,7 +2,6 @@
 public class Gerente extends Funcionario{
 
 	private int senha;
-
 	
 	public boolean autentica(int senha) {
 		
@@ -10,11 +9,8 @@ public class Gerente extends Funcionario{
 			return true;
 		}else {
 			return false;
-		}
-			
-		
-	}
-	
+		}				
+	}	
 	
 	public void setSenha(int senha) {
 		this.senha = senha;
@@ -25,9 +21,12 @@ public class Gerente extends Funcionario{
 
 	@Override
 	public String toString() {
-		return "Gerente [senha=" + senha + ", getBonificacao()=" + getBonificacao() + ", getNome()=" + getNome()
-				+ ", getCpf()=" + getCpf() + ", getSalario()=" + getSalario() + "]";
-	}
-	
-	
+		return "Classe Gerente Possui Senha: " + senha 
+				+ ", Bonificação: " 
+				+ getBonificacao() 
+				+ ", Nome: " + getNome()
+				+ ", CPF: " + getCpf() 
+				+ ", Salário" 
+				+ getSalario();
+	}	
 }

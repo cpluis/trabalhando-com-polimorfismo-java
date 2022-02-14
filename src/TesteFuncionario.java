@@ -15,6 +15,7 @@ public class TesteFuncionario {
 		gerente.setSalario(5000.0);
 		boolean autenticacao = gerente.autentica(2222);
 		System.out.println(gerente);
+		gerente.setSenha(222);
 		System.out.println(autenticacao);
 		
 		System.out.println();
