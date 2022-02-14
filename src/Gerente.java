@@ -18,6 +18,13 @@ public class Gerente extends Funcionario{
 	public Gerente() {
 		
 	}
+	
+//	public double getBonificacao() { // por ter deixado como protected eu consigo acessar o atributo salario
+//		return  + super.getSalario(); //utilizando getbonificação da classe funcionario
+//		//eu sou obrigado a colocar a palavra super para indicar que estou usando o metodo da super classe
+//	}
+//	
+
 
 	@Override
 	public String toString() {
@@ -28,5 +35,11 @@ public class Gerente extends Funcionario{
 				+ ", CPF: " + getCpf() 
 				+ ", Salário" 
 				+ getSalario();
+	}
+
+	@Override
+	public double getBonificacao() {
+		// TODO Auto-generated method stub
+		return 0;
 	}	
 }

@@ -1,18 +1,20 @@
 
-public class Funcionario {
+// para classe não pode ser instanciada
+public abstract class Funcionario {
 
 	private String nome;
 	private String cpf;
-	private double salario;
+	private double salario; //para deixar publico apenas para os filhos e para outras classe fica ainda privado
 
 	
 	public Funcionario() {
 		
 	}
 	
-	public double getBonificacao() {
-		return this.salario * 0.1;
-	}
+	// metodo que obriga implementação das classes que instanciam Funcionario
+	//o primeiro filho da classe precisa instancia obrigatoriamante
+	//meto sem corpo, não ha implementação aqui apenas onde é instanciado caso deseje
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;
